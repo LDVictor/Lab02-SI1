@@ -1,0 +1,68 @@
+<html ng-app="OrganizadorDeSeries">
+<head>
+    <meta charset="UTF-8">
+    <title>Organizador de Séries</title>
+    <link rel="stylesheet" type="text/css" href="css/tema.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-messages.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/OrganizadorSeriesController.js"></script>
+
+</head>
+<body class="center-block container text-center" ng-controller="OrganizadorSeriesController">
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Organizador de Séries</a>
+            <a class="navbar-btn btn btn" href="#" onclick="location.href = 'https://github.com/LDVictor/';">Meu repositório do GitHub.com</a>
+        </div>
+    </div>
+</nav>
+
+<input class="form-control" type="text" ng-model="serie.nome" name="nome" placeholder="Digite o nome da serie que quer pesquisar: "/>
+<button class="btn btn-success btn-xs button" ng-click="pesquisarSerie(nome)" ng-disabled="!serie.nome">Pesquisar Serie</button>
+
+    <table ng-show="series.length > 0" class="table">
+        <th>
+            <td>Nome</td>
+            <td>Sinopse</td>
+            <td>Classificacao Etaria</td>
+            <td>IMDb</td>
+            <td>ID</td>
+            <td>Avaliacao do Usuario</td>
+            <td>Imagem</td>
+        </th>
+        </tr ng-repeat="serie in series">
+            <td>{{serie.nome}}</td>
+            <td>{{serie.sinopse}}</td>
+            <td>{{serie.classificacaoEtaria}}</td>
+            <td>{{serie.IMDb}}</td>
+            <td>{{serie.ID}}</td>
+            <td>{{serie.avaliacaoDoUsuario}}</td>
+            <td>{{serie.imagem}}</td>
+        </tr>
+    </table>
+    
+    <table ng-show="watchlist.length > 0" class="table">
+        <tr>
+            <th></th>
+            <th>Meu Watchlist</th>
+        </tr>
+        <td>{{serie.nome}}</td>
+        <td>{{serie.sinopse}}</td>
+        <td>{{serie.classificacaoEtaria}}</td>
+        <td>{{serie.IMDb}}</td>
+        <td>{{serie.ID}}</td>
+        <td>{{serie.avaliacaoDoUsuario}}</td>
+        <td>{{serie.imagem}}</td>
+        </tr>
+    </table>
+
+    <button class="btn btn-warning btn-xs button" ng-click="apagarSeries(series)" ng-if="temSeries()">Apagar Serie(s)</button>
+    <button class="btn btn-warning btn-xs button" ng-click="apagarWatchlist(series)" ng-if="temSeriesNoWatchlist()">Apagar Serie(s) do Watchlist</button>
+
+
+</body>
+</html>

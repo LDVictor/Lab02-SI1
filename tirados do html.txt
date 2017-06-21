@@ -1,0 +1,9 @@
+    <div class="barraProgresso">
+        <div class="progress">
+            <div class="progress-bar" ng-style="{width : ( porcentagemConcluida() + '%' ) }">
+                <h5>{{porcentagemConcluida() + '%'}}</h5>
+            </div>
+        </div>
+    </div>
+
+    <h4>{{'Series: ' + quantidadeTarefas(tarefas) + ' | ' + 'Porcentagem de series assistidas: ' + quantidadeConcluidas()}}</h4>
