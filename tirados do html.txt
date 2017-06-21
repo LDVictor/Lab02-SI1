@@ -1,9 +1,14 @@
-    <div class="barraProgresso">
-        <div class="progress">
-            <div class="progress-bar" ng-style="{width : ( porcentagemConcluida() + '%' ) }">
-                <h5>{{porcentagemConcluida() + '%'}}</h5>
-            </div>
-        </div>
-    </div>
-
-    <h4>{{'Series: ' + quantidadeTarefas(tarefas) + ' | ' + 'Porcentagem de series assistidas: ' + quantidadeConcluidas()}}</h4>
+    <table ng-show="watchlist.length > 0" class="table">
+        <tr>
+            <th></th>
+            <th>Meu Watchlist</th>
+        </tr>
+        <td>{{serie.nome}}</td>
+        <td>{{serie.sinopse}}</td>
+        <td>{{serie.classificacaoEtaria}}</td>
+        <td>{{serie.IMDb}}</td>
+        <td>{{serie.ID}}</td>
+        <td>{{serie.avaliacaoDoUsuario}}</td>
+        <td>{{serie.imagem}}</td>
+        </tr>
+    </table>

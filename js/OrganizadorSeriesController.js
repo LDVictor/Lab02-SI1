@@ -1,4 +1,4 @@
-angular.module("OrganizadorSeries").controller("OrganizadorSeriesController", function ($scope) {
+angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", function ($scope) {
 
     $scope.app = "Organizador de Séries";
     $scope.series = [
@@ -10,7 +10,7 @@ angular.module("OrganizadorSeries").controller("OrganizadorSeriesController", fu
             IMDb: "7.6",
             ID: "tt1578873",
             avaliacaoDoUsuario: 9
-        },
+        }
     ];
 
     $scope.watchlist = [
@@ -22,51 +22,53 @@ angular.module("OrganizadorSeries").controller("OrganizadorSeriesController", fu
             IMDb: "7.6",
             ID: "tt1578873",
             avaliacaoDoUsuario: 9
-        },
+        }
 
     ]
 
     $scope.pesquisarSerie = function (nome) {
-
+        console.log(nome);
         // Caso 1: Serie na lista de series
-        series.forEach(function(nomeDaSerie) {
-            if (nomeDaSerie == nome) {
-                return serie;
+        $scope.series.forEach(function(serie) {
+                    if (serie.nome == nome) {
+                        console.log(serie);
+                        return serie;
             }
         })
 
         // Caso 2: Serie na API do IMDb
 
+
     };
 
-    $scope.adicionarSerie = function (nome, sinopse, imagem, classificacaoEtaria, IMDb, ID) {
-        $scope.series.add(nome, sinopse, imagem, classificacaoEtaria, IMDb, ID, 0);
+    $scope.adicionarSerie = function (serie) {
+        $scope.series.add(serie);
     };
 
-    $scope.adicionarSerieAoWatchlist = function (nome, sinopse, imagem, classificacaoEtaria, IMDb, ID) {
-        $scope.watchlist.add(nome, sinopse, imagem, classificacaoEtaria, IMDb, ID, 0);
+    $scope.adicionarSerieAoWatchlist = function (serie) {
+        $scope.watchlist.add(serie);
     };
 
-    $scope.apagarSerie = function (id) {
-        series.forEach(function(idDaSerie) {
-                if (idDaSerie == id) {
-                    series.remove(id);
+    $scope.apagarSeries = function () {
+        series.forEach(function(serie) {
+                if (serie.ID == listaDeIDs[i]) {
+                    series.remove(serie);
                 }
         })
     };
 
     $scope.apagarSerieDoWatchlist = function (id) {
-        watchlist.forEach(function(idDaSerie) {
-            if (idDaSerie == id) {
-                watchlist.remove(id);
+        watchlist.forEach(function(serie) {
+            if (serie.ID == id) {
+                watchlist.remove(serie);
             }
         })
     };
 
     $scope.avaliarSerie = function (id, numero) {
-        series.forEach(function(idDaSerie) {
-            if (idDaSerie == id) {
-                series.nota = numero;
+        series.forEach(function(serie) {
+            if (serie.ID == id) {
+                serie.nota = numero;
             }
         })
     };
