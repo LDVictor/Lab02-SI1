@@ -1,48 +1,49 @@
-angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", function ($scope) {
+angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", function ($scope, $http) {
 
     $scope.app = "Organizador de Séries";
     $scope.series = [
         {
-            nome: "Pretty Little Liars",
+            Title: "Pretty Little Liars",
             sinopse: "Four friends band together against an anonymous foe who threatens to reveal their darkest secrets, while unraveling the mystery of the murder of their best friend.",
-            imagem: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU5MDYzMzQ2Nl5BMl5BanBnXkFtZTgwMDE3MzU4MTI@._V1_SX300.jpg",
+            Poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU5MDYzMzQ2Nl5BMl5BanBnXkFtZTgwMDE3MzU4MTI@._V1_SX300.jpg",
             classificacaoEtaria: "TV-14",
             IMDb: "7.6",
-            ID: "tt1578873",
+            imdbID: "tt1578873",
             avaliacaoDoUsuario: 9
         }
     ];
 
     $scope.watchlist = [
         {
-            nome: "Pretty Little Liars",
+            Title: "Pretty Little Liars",
             sinopse: "Four friends band together against an anonymous foe who threatens to reveal their darkest secrets, while unraveling the mystery of the murder of their best friend.",
-            imagem: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU5MDYzMzQ2Nl5BMl5BanBnXkFtZTgwMDE3MzU4MTI@._V1_SX300.jpg",
+            Poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU5MDYzMzQ2Nl5BMl5BanBnXkFtZTgwMDE3MzU4MTI@._V1_SX300.jpg",
             classificacaoEtaria: "TV-14",
             IMDb: "7.6",
-            ID: "tt1578873",
+            imdbID: "tt1578873",
             avaliacaoDoUsuario: 9
         }
 
     ]
 
-    $scope.pesquisarSerie = function (nome) {
-        console.log(nome);
-        // Caso 1: Serie na lista de series
-        $scope.series.forEach(function(serie) {
-                    if (serie.nome == nome) {
-                        console.log(serie);
-                        return serie;
-            }
+    $scope.seriesSearch = [
+    ];
+
+    $scope.searched = false;
+
+    $scope.pesquisarSerie = function(nome){
+        var promise = $http.get('http://www.omdbapi.com/?s=' + nome + '&type=series&apikey=93330d3c').then(function(response){
+            $scope.seriesSearch = response.data.Search;
+            $scope.searched = true;
+        }, function error(error){
+            console.log(error);
         })
-
-        // Caso 2: Serie na API do IMDb
-
-
+        return promise;
     };
 
-    $scope.adicionarSerie = function (serie) {
-        $scope.series.add(serie);
+   $scope.adicionarSerie = function (serie) {
+        $scope.series.push(serie);
+        console.log($scope.series);
     };
 
     $scope.adicionarSerieAoWatchlist = function (serie) {
@@ -51,7 +52,7 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
 
     $scope.apagarSeries = function () {
         series.forEach(function(serie) {
-                if (serie.ID == listaDeIDs[i]) {
+                if (serie.imdbID == listaDeIDs[i]) {
                     series.remove(serie);
                 }
         })
@@ -59,7 +60,7 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
 
     $scope.apagarSerieDoWatchlist = function (id) {
         watchlist.forEach(function(serie) {
-            if (serie.ID == id) {
+            if (serie.imdbID == id) {
                 watchlist.remove(serie);
             }
         })
@@ -67,10 +68,23 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
 
     $scope.avaliarSerie = function (id, numero) {
         series.forEach(function(serie) {
-            if (serie.ID == id) {
+            if (serie.imdbID == id) {
                 serie.nota = numero;
             }
         })
+    };
+
+    $scope.contemNaLista = function (id) {
+        series.forEach(function(series) {
+            if(serie.imdbID == id) {
+                return true;
+            }
+            return false;
+        })
+    }
+
+    $scope.searched = function(){
+        return $scope.searched;
     };
 
 

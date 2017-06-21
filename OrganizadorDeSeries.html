@@ -21,34 +21,41 @@
     </div>
 </nav>
 
-    <table ng-show="series.length > 0" class="table">
-        <th>
-            <td>Nome</td>
-            <td>Sinopse</td>
-            <td>Classificação</td>
-            <td>IMDb</td>
-            <td>Sua Nota</td>
-            <td>Imagem</td>
-        </th>
-        <tr ng-repeat="serie in series">
-            <td><input type = "checkbox" name = "marcado"></input></td>
-            <td>{{serie.nome}}</td>
-            <td>{{serie.sinopse}}</td>
-            <td>{{serie.classificacaoEtaria}}</td>
-            <td>{{serie.IMDb}}</td>
-            <td>{{serie.avaliacaoDoUsuario}}</td>
-            <td><img ng-src="{{serie.imagem}}" height="140" width="90"></td>
-        </tr>
-    </table>
+<table ng-show="series.length > 0" class="table">
+    <th>
+    <td>Nome</td>
+    <td>Sinopse</td>
+    <td>Classificação</td>
+    <td>IMDb</td>
+    <td>Sua Nota</td>
+    <td>Imagem</td>
+    </th>
+    <tr ng-repeat="serie in series">
+        <td><input type = "checkbox" name = "marcado"></input></td>
+        <td>{{serie.Title}}</td>
+        <td>{{serie.sinopse}}</td>
+        <td>{{serie.classificacaoEtaria}}</td>
+        <td>{{serie.IMDb}}</td>
+        <td>{{serie.avaliacaoDoUsuario}}</td>
+        <td><img ng-src="{{serie.Poster}}" height="140" width="90"></td>
+    </tr>
+</table>
 
+<td></td>
+<td></td>
 
 <input class="form-control" type="text" ng-model="nome" name="nome" placeholder="Digite o nome da serie que quer pesquisar: "/>
 <button class="btn btn-success btn-xs button" ng-click="pesquisarSerie(nome)" ng-disabled="nome.length == 0">Pesquisar Serie</button>
 
+<table class="table">
+    <tr ng-repeat="serie in seriesSearch">
+        <td>{{serie.Title}}</td>
+        <td><img ng-src="{{serie.Poster}}" height="140" width="90"></td>
+        <td><button type="submit"  class="buttonT" ng-click="adicionarSerie(serie)" value="Adiciona a série ao seu perfil."></button></td>
 
-    <button class="btn btn-warning btn-xs button" ng-click="apagarSeries()" >Apagar Serie(s)</button>
-    <button class="btn btn-warning btn-xs button" ng-click="apagarWatchlist(series)" >Apagar Serie(s) do Watchlist</button>
-
+    </tr>
+</table>
+<button class="btn btn-warning btn-xs button" ng-click="apagarSeries()" >Apagar Série(s) [-]</button>
 
 </body>
 </html>
