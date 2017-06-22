@@ -9,7 +9,8 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
             Rated: "TV-14",
             imdbRating: "7.6",
             imdbID: "tt1578873",
-            avaliacaoDoUsuario: 9
+            avaliacaoDoUsuario: 9,
+            ultimoEpisodio: "Episodio 10 da temporada 4"
         }
     ];
 
@@ -21,7 +22,8 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
             Rated: "TV-MA",
             imdbRating: "8.6",
             imdbID: "tt2575988",
-            avaliacaoDoUsuario: 0
+            avaliacaoDoUsuario: 0,
+            ultimoEpisodio: "Episodio 10 da temporada 4"
         }
 
     ]
@@ -58,13 +60,15 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
         $scope.watchlist.pop(serie);
     };
 
-    $scope.avaliarSerie = function (id, numero) {
-        series.forEach(function(serie) {
-            if (serie.imdbID == id) {
-                serie.nota = numero;
-            }
-        })
+    $scope.avaliarSerie = function (serie, nota) {
+        if (nota < 10 || nota > 0) {
+            serie.avaliacaoDoUsuario == nota;
+        }
     };
+
+    $scope.alterarUltimoEpisodio = function (serie, episodio) {
+        serie.ultimoEpisodio = episodio;
+    }
 
     $scope.contemNaLista = function (id) {
         series.forEach(function(series) {

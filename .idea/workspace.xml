@@ -4,7 +4,10 @@
     <list default="true" id="180eb76a-0c30-4bda-894a-887969027605" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrganizadorDeSeries.html" afterPath="$PROJECT_DIR$/OrganizadorDeSeries.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/app.css" afterPath="$PROJECT_DIR$/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/tema.css" afterPath="$PROJECT_DIR$/css/tema.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/OrganizadorSeriesController.js" afterPath="$PROJECT_DIR$/js/OrganizadorSeriesController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tirados do html.txt" afterPath="$PROJECT_DIR$/tirados do html.txt" />
     </list>
     <ignored path="hello-world.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,18 +31,18 @@
       <file leaf-file-name="tema.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/tema.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3094">
-              <caret line="182" column="12" lean-forward="false" selection-start-line="182" selection-start-column="12" selection-end-line="182" selection-end-column="12" />
+            <state relative-caret-position="390">
+              <caret line="5886" column="1" lean-forward="false" selection-start-line="5886" selection-start-column="1" selection-end-line="5886" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrganizadorSeriesController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrganizadorSeriesController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
-              <caret line="56" column="51" lean-forward="false" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
+              <caret line="69" column="40" lean-forward="false" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -48,19 +51,35 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="661">
+              <caret line="235" column="1" lean-forward="false" selection-start-line="235" selection-start-column="1" selection-end-line="235" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrganizadorDeSeries.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrganizadorDeSeries.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OrganizadorDeSeries.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="127">
+              <caret line="35" column="103" lean-forward="true" selection-start-line="35" selection-start-column="103" selection-end-line="35" selection-end-column="103" />
+              <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#2007#2014#1" expanded="true" />
+                <element signature="n#table#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#table#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,8 +112,8 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="5280" column="6" lean-forward="false" selection-start-line="5280" selection-start-column="0" selection-end-line="5280" selection-end-column="6" />
+            <state relative-caret-position="90168">
+              <caret line="5304" column="13" lean-forward="false" selection-start-line="5303" selection-start-column="31" selection-end-line="5304" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -978,30 +997,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular-messages.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/angular/angular-messages.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1481274810000" expanded="true" signature="13837:14533" ph="..." />
-                <marker date="1481274810000" expanded="true" signature="13856:14115" ph="..." />
-                <marker date="1481274810000" expanded="true" signature="13926:14095" ph="..." />
-                <marker date="1481274810000" expanded="false" signature="14259:14271" ph="..." />
-                <marker date="1481274810000" expanded="true" signature="14285:14516" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -1011,6 +1014,7 @@
       <find>table</find>
       <find>checkbox</find>
       <find>button</find>
+      <find>modal-div</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1034,11 +1038,12 @@
         <option value="$PROJECT_DIR$/js/listaTarefasCtrl.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/css/app.css" />
         <option value="$PROJECT_DIR$/css/algumacoisa.css" />
+        <option value="$PROJECT_DIR$/MinhasSeries.html" />
+        <option value="$PROJECT_DIR$/js/OrganizadorSeriesController.js" />
+        <option value="$PROJECT_DIR$/css/app.css" />
         <option value="$PROJECT_DIR$/css/tema.css" />
         <option value="$PROJECT_DIR$/OrganizadorDeSeries.html" />
-        <option value="$PROJECT_DIR$/js/OrganizadorSeriesController.js" />
       </list>
     </option>
   </component>
@@ -1073,7 +1078,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -1084,6 +1089,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="OrganizadorSeries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrganizadorSeries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrganizadorSeries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1153,7 +1172,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1567,14 +1586,16 @@
       <workItem from="1497987014384" duration="619000" />
       <workItem from="1498065522622" duration="10831000" />
       <workItem from="1498141450785" duration="2123000" />
+      <workItem from="1498159244084" duration="10080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24285000" />
+    <option name="totallyTimeSpent" value="34365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1644,20 +1665,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/angular/angular-messages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1481274810000" expanded="true" signature="13837:14533" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="13856:14115" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="13926:14095" ph="..." />
-            <marker date="1481274810000" expanded="false" signature="14259:14271" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="14285:14516" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/tema.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58650">
@@ -1677,7 +1684,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2007#2014#1" expanded="true" />
+            <element signature="n#table#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#table#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2606,7 +2619,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2007#2014#1" expanded="true" />
+            <element signature="n#table#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#table#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3535,7 +3554,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2007#2014#1" expanded="true" />
+            <element signature="n#table#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#table#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4525,13 +4550,6 @@
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms2.rnc" />
     <entry file="file://$PROJECT_DIR$/lista.html" />
     <entry file="file://$PROJECT_DIR$/js/view.js" />
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/angular/angular-messages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -5441,14 +5459,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/algumacoisa.css" />
-    <entry file="file://$PROJECT_DIR$/css/tema.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3094">
-          <caret line="182" column="12" lean-forward="false" selection-start-line="182" selection-start-column="12" selection-end-line="182" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -5459,26 +5469,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5280" column="6" lean-forward="false" selection-start-line="5280" selection-start-column="0" selection-end-line="5280" selection-end-column="6" />
+        <state relative-caret-position="90168">
+          <caret line="5304" column="13" lean-forward="false" selection-start-line="5303" selection-start-column="31" selection-end-line="5304" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrganizadorDeSeries.html">
+    <entry file="file://$PROJECT_DIR$/MinhasSeries.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        <state relative-caret-position="578">
+          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -5486,8 +5496,38 @@
     <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
-          <caret line="56" column="51" lean-forward="false" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
+          <caret line="69" column="40" lean-forward="false" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="235" column="1" lean-forward="false" selection-start-line="235" selection-start-column="1" selection-end-line="235" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/tema.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="5886" column="1" lean-forward="false" selection-start-line="5886" selection-start-column="1" selection-end-line="5886" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrganizadorDeSeries.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="35" column="103" lean-forward="true" selection-start-line="35" selection-start-column="103" selection-end-line="35" selection-end-column="103" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2007#2014#1" expanded="true" />
+            <element signature="n#table#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#table#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

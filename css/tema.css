@@ -5878,6 +5878,13 @@ button.close {
     -webkit-overflow-scrolling: touch;
     outline: 0;
 }
+.modal > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+}
 .modal.fade .modal-dialog {
     -webkit-transition: -webkit-transform .3s ease-out;
     -o-transition:      -o-transform .3s ease-out;
@@ -6753,5 +6760,16 @@ button.close {
     .hidden-print {
         display: none !important;
     }
+}
+
+.estrelas input[type=radio] {
+    display: none;
+}
+.estrelas label i.fa:before {
+    content:'\f005';
+    color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
 }
 /*# sourceMappingURL=bootstrap.css.map */

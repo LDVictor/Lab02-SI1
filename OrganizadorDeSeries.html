@@ -8,6 +8,7 @@
     <script src="lib/angular/angular-messages.js"></script>
     <script src="js/app.js"></script>
     <script src="js/OrganizadorSeriesController.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
 
 </head>
 <body class="center-block container text-center" ng-controller="OrganizadorSeriesController">
@@ -23,54 +24,79 @@
 
 <ul class="nav navbar-nav" >
     <li class="active" ><a href="#">Home</a></li>
-    <li><a href="#">Pesquisar</a></li>
     <li><a href="#">Minhas Séries</a></li>
     <li><a href="#">WatchList</a></li>
 </ul>
 
 <table ng-show="series.length > 0" class="table">
-    <th>
-    <td>Nome</td>
-    <td>Sinopse</td>
-    <td>Classificação</td>
-    <td>IMDb</td>
-    <td>Sua Nota</td>
-    <td>Imagem</td>
-    </th>
     <tr ng-repeat="serie in series">
         <td> </td>
         <td>{{serie.Title}}</td>
-        <td>{{serie.Plot}}</td>
-        <td>{{serie.Rated}}</td>
-        <td>{{serie.imdbRating}}</td>
-        <td>{{serie.avaliacaoDoUsuario}}</td>
-        <td><img ng-src="{{serie.Poster}}" height="140" width="90"></td>
-        <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="apagarSerie(serie)">Remover</button></td>
+        <td><img ng-src="{{serie.Poster !== 'N/A' ? serie.Poster:'http://mteliza.vic.cricket.com.au/files/819/images/imageNotAvailable.jpg'}}" height="300" width="200"></td>
+        <td><button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#myModal{{$index}}">Mais informações</button></td>
+        <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="apagarSerie(serie)">Remover do perfil</button></td>
     </tr>
 </table>
 
-<table ng-show="series.length > 0" class="table">
-    <th>
-    <td>Nome</td>
-    <td>Sinopse</td>
-    <td>Classificação</td>
-    <td>IMDb</td>
-    <td>Imagem</td>
-    </th>
+<div id="myModal{{$index}}" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title alinhacentro">{{serie.Title}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img id="imagesize" src="{{serie.Poster !== 'N/A' ? serie.Poster:'https://upload.wikimedia.org/wikipedia/commons/6/64/Poster_not_available.jpg'}}" alt="Lights">
+                    </div>
+                    <div class="col-md-8 sinopse">
+                        <p>{{serie.Plot}}</p>
+                    </div>
+                    <div class="col-md-8 info">
+                        <p><b>Média no IMDb:</b> {{serie.imdbRating}}</p>
+                        <p><b>Classificação Indicativa:</b> {{serie.Rated}}</p>
+                        <div class="input-group input">
+                            <input ng-model="nota" type="text" class="form-control" placeholder="Ex.: 8.5">
+                            <div class="input-group-btn">
+                                <button class="btn btn-basic" type="submit" ng-click="setMyRating(serie,nota)">
+                                    <i>Ok</i>
+                                </button>
+                            </div>
+                        </div>
+                        <p><b>Sua Avaliação:</b> {{serie.myRating}}</p>
+                        <div class="input-group input">
+                            <input ng-model="lastep" type="text" class="form-control" placeholder="Ex.: S01EP05">
+                            <div class="input-group-btn">
+                                <button class="btn btn-basic" type="submit" ng-click="setLastEpisode(serie,lastep)">
+                                    <i>Ok</i>
+                                </button>
+                            </div>
+                        </div>
+                        <p><b>Último episódio que você viu:</b> {{serie.lastEpisode}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<table ng-show="watchlist.length > 0" class="table">
     <tr ng-repeat="serie in watchlist">
         <td> </td>
         <td>{{serie.Title}}</td>
-        <td>{{serie.Plot}}</td>
-        <td>{{serie.Rated}}</td>
-        <td>{{serie.imdbRating}}</td>
-        <td><img ng-src="{{serie.Poster}}" height="140" width="90"></td>
-        <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="adicionarSerie(serie)">Adicionar</button></td>
-        <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="apagarSerieDoWatchlist(serie)">Remover</button></td>
+        <td><img ng-src="{{serie.Poster !== 'N/A' ? serie.Poster:'http://mteliza.vic.cricket.com.au/files/819/images/imageNotAvailable.jpg'}}" height="300" width="200"></td>
+        <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="adicionarSerie(serie)">Adicionar ao perfil</button></td>
+        <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="apagarSerieDoWatchlist(serie)">Remover da watchlist</button></td>
     </tr>
 </table>
-
-
-<td> </td>
 
 <input class="form-control" type="text" ng-model="nome" name="nome" placeholder="Digite o nome da serie que quer pesquisar: "/>
 <button class="btn btn-success btn-xs button" ng-click="pesquisarSerie(nome)" ng-disabled="nome.length == 0">Pesquisar Serie</button>
@@ -78,11 +104,12 @@
 <table class="table">
     <tr ng-repeat="serie in seriesSearch">
         <td>{{serie.Title}}</td>
-        <td><img ng-src="{{serie.Poster}}" height="140" width="90"></td>
+        <td><img ng-src="{{serie.Poster !== 'N/A' ? serie.Poster:'http://mteliza.vic.cricket.com.au/files/819/images/imageNotAvailable.jpg'}}" height="300" width="200"></td>
         <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="adicionarSerie(serie)">Adicionar</button></td>
         <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="adicionarSerieAoWatchlist(serie)">Adicionar ao Watchlist</button></td>
     </tr>
 </table>
+
 
 </body>
 </html>

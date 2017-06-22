@@ -12,3 +12,13 @@
         <td>{{serie.imagem}}</td>
         </tr>
     </table>
+
+
+ <td>{{serie.Plot}}</td>
+        <td>{{serie.Rated}}</td>
+        <td>{{serie.imdbRating}}</td>
+
+
+<td>{{serie.Plot}}</td>
+        <td>{{serie.Rated}}</td>
+        <td>{{serie.imdbRating}}</td>

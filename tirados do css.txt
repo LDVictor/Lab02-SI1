@@ -227,14 +227,6 @@ td {
     color: #fff;
 }
 
-.modal > div {
-    width: 400px;
-    position: relative;
-    margin: 10% auto;
-    padding: 15px 20px;
-    background: #fff;
-}
-
 .hoverzoom .retina a {
     display: block;
     width: 150px;
