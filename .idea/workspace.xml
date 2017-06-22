@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="180eb76a-0c30-4bda-894a-887969027605" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrganizadorDeSeries.html" afterPath="$PROJECT_DIR$/OrganizadorDeSeries.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/OrganizadorSeriesController.js" afterPath="$PROJECT_DIR$/js/OrganizadorSeriesController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/angular/angular.js" afterPath="$PROJECT_DIR$/lib/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bootstrap/bootstrap.js" afterPath="$PROJECT_DIR$/lib/bootstrap/bootstrap.js" />
     </list>
     <ignored path="hello-world.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,18 +28,18 @@
       <file leaf-file-name="tema.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/tema.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="182" column="12" lean-forward="true" selection-start-line="182" selection-start-column="12" selection-end-line="182" selection-end-column="12" />
+            <state relative-caret-position="3094">
+              <caret line="182" column="12" lean-forward="false" selection-start-line="182" selection-start-column="12" selection-end-line="182" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrganizadorSeriesController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrganizadorSeriesController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+            <state relative-caret-position="595">
+              <caret line="56" column="51" lean-forward="false" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -59,8 +58,8 @@
       <file leaf-file-name="OrganizadorDeSeries.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OrganizadorDeSeries.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="53" column="42" lean-forward="false" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+            <state relative-caret-position="357">
+              <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -91,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="17">
               <caret line="5280" column="6" lean-forward="false" selection-start-line="5280" selection-start-column="0" selection-end-line="5280" selection-end-column="6" />
               <folding />
             </state>
@@ -1074,7 +1073,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1153,8 +1153,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1566,16 +1565,16 @@
       <workItem from="1497923467819" duration="1672000" />
       <workItem from="1497925195438" duration="231000" />
       <workItem from="1497987014384" duration="619000" />
-      <workItem from="1498065522622" duration="10749000" />
+      <workItem from="1498065522622" duration="10831000" />
+      <workItem from="1498141450785" duration="2123000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22080000" />
+    <option name="totallyTimeSpent" value="24285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1593,7 +1592,6 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1605,6 +1603,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -5444,8 +5443,8 @@
     <entry file="file://$PROJECT_DIR$/css/algumacoisa.css" />
     <entry file="file://$PROJECT_DIR$/css/tema.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="182" column="12" lean-forward="true" selection-start-line="182" selection-start-column="12" selection-end-line="182" selection-end-column="12" />
+        <state relative-caret-position="3094">
+          <caret line="182" column="12" lean-forward="false" selection-start-line="182" selection-start-column="12" selection-end-line="182" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -5468,26 +5467,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+        <state relative-caret-position="17">
+          <caret line="5280" column="6" lean-forward="false" selection-start-line="5280" selection-start-column="0" selection-end-line="5280" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OrganizadorDeSeries.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="53" column="42" lean-forward="false" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+        <state relative-caret-position="357">
+          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="5280" column="6" lean-forward="false" selection-start-line="5280" selection-start-column="0" selection-end-line="5280" selection-end-column="6" />
+        <state relative-caret-position="595">
+          <caret line="56" column="51" lean-forward="false" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
           <folding />
         </state>
       </provider>

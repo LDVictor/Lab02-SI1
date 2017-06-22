@@ -21,6 +21,13 @@
     </div>
 </nav>
 
+<ul class="nav navbar-nav" >
+    <li class="active" ><a href="#">Home</a></li>
+    <li><a href="#">Pesquisar</a></li>
+    <li><a href="#">Minhas Séries</a></li>
+    <li><a href="#">WatchList</a></li>
+</ul>
+
 <table ng-show="series.length > 0" class="table">
     <th>
     <td>Nome</td>
@@ -31,18 +38,39 @@
     <td>Imagem</td>
     </th>
     <tr ng-repeat="serie in series">
-        <td><input type = "checkbox" name = "marcado"></input></td>
+        <td> </td>
         <td>{{serie.Title}}</td>
-        <td>{{serie.sinopse}}</td>
-        <td>{{serie.classificacaoEtaria}}</td>
-        <td>{{serie.IMDb}}</td>
+        <td>{{serie.Plot}}</td>
+        <td>{{serie.Rated}}</td>
+        <td>{{serie.imdbRating}}</td>
         <td>{{serie.avaliacaoDoUsuario}}</td>
         <td><img ng-src="{{serie.Poster}}" height="140" width="90"></td>
+        <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="apagarSerie(serie)">Remover</button></td>
     </tr>
 </table>
 
-<td></td>
-<td></td>
+<table ng-show="series.length > 0" class="table">
+    <th>
+    <td>Nome</td>
+    <td>Sinopse</td>
+    <td>Classificação</td>
+    <td>IMDb</td>
+    <td>Imagem</td>
+    </th>
+    <tr ng-repeat="serie in watchlist">
+        <td> </td>
+        <td>{{serie.Title}}</td>
+        <td>{{serie.Plot}}</td>
+        <td>{{serie.Rated}}</td>
+        <td>{{serie.imdbRating}}</td>
+        <td><img ng-src="{{serie.Poster}}" height="140" width="90"></td>
+        <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="adicionarSerie(serie)">Adicionar</button></td>
+        <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="apagarSerieDoWatchlist(serie)">Remover</button></td>
+    </tr>
+</table>
+
+
+<td> </td>
 
 <input class="form-control" type="text" ng-model="nome" name="nome" placeholder="Digite o nome da serie que quer pesquisar: "/>
 <button class="btn btn-success btn-xs button" ng-click="pesquisarSerie(nome)" ng-disabled="nome.length == 0">Pesquisar Serie</button>
@@ -51,11 +79,10 @@
     <tr ng-repeat="serie in seriesSearch">
         <td>{{serie.Title}}</td>
         <td><img ng-src="{{serie.Poster}}" height="140" width="90"></td>
-        <td><button type="submit"  class="buttonT" ng-click="adicionarSerie(serie)" value="Adiciona a série ao seu perfil."></button></td>
-
+        <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="adicionarSerie(serie)">Adicionar</button></td>
+        <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="adicionarSerieAoWatchlist(serie)">Adicionar ao Watchlist</button></td>
     </tr>
 </table>
-<button class="btn btn-warning btn-xs button" ng-click="apagarSeries()" >Apagar Série(s) [-]</button>
 
 </body>
 </html>
