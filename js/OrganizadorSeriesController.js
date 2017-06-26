@@ -53,10 +53,6 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
         });
     };
 
-    $scope.apagarSerie = function (serie) {
-        $scope.series.pop(serie);
-    };
-
     $scope.transferirSerie = function (serie) {
         if (!($scope.serieExisteNoPerfil(serie))) {
             $scope.series.push(serie);
@@ -68,8 +64,18 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
 
     };
 
+    $scope.apagarSerie = function (serie) {
+        var resposta = confirm("Tem certeza que deseja remover a série " + serie.Title + " do seu perfil?");
+        if (resposta == true) {
+            $scope.series.pop(serie);
+        }
+    };
+
     $scope.apagarSerieDoWatchlist = function (serie) {
-        $scope.watchlist.pop(serie);
+        var resposta = confirm("Tem certeza que deseja remover a série " + serie.Title + " do seu watchlist?");
+        if (resposta == true) {
+            $scope.watchlist.pop(serie);
+        }
     };
 
     $scope.avaliarSerie = function (serie, nota) {
@@ -86,15 +92,6 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
     }
 
     // Métodos auxiliares
-
-    $scope.contemNaLista = function (nomeserie) {
-        $scope.series.forEach(function(serie) {
-            if(serie.Title === nomeserie) {
-                return true;
-            }
-            return false;
-        })
-    }
 
     $scope.serieExisteNoPerfil = function(seriePesquisada) {
         for (var i = 0; i < $scope.series.length; i++) {

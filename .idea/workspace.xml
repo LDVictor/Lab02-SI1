@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="180eb76a-0c30-4bda-894a-887969027605" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/final.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap/bootstrap css tirado.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap/bootstrap tirado.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tirados do css.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tirados do html.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrganizadorDeSeries.html" afterPath="$PROJECT_DIR$/OrganizadorDeSeries.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/app.css" afterPath="$PROJECT_DIR$/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/OrganizadorSeriesController.js" afterPath="$PROJECT_DIR$/js/OrganizadorSeriesController.js" />
     </list>
     <ignored path="hello-world.iws" />
@@ -32,17 +23,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="OrganizadorSeriesController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrganizadorSeriesController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrganizadorDeSeries.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrganizadorDeSeries.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OrganizadorDeSeries.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="419">
@@ -172,10 +163,10 @@
         <option value="$PROJECT_DIR$/MinhasSeries.html" />
         <option value="$PROJECT_DIR$/lib/bootstrap/bootstrap.js" />
         <option value="$PROJECT_DIR$/lib/bootstrap/bootstrap.css" />
-        <option value="$PROJECT_DIR$/js/OrganizadorSeriesController.js" />
         <option value="$PROJECT_DIR$/css/tema.css" />
         <option value="$PROJECT_DIR$/css/app.css" />
         <option value="$PROJECT_DIR$/OrganizadorDeSeries.html" />
+        <option value="$PROJECT_DIR$/js/OrganizadorSeriesController.js" />
       </list>
     </option>
   </component>
@@ -726,12 +717,12 @@
       <workItem from="1498247896943" duration="1679000" />
       <workItem from="1498496671564" duration="13418000" />
       <workItem from="1498512108586" duration="141000" />
-      <workItem from="1498514667254" duration="3232000" />
+      <workItem from="1498514667254" duration="3806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52835000" />
+    <option name="totallyTimeSpent" value="53409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -3650,14 +3641,6 @@
     <entry file="file://$PROJECT_DIR$/css/algumacoisa.css" />
     <entry file="file://$PROJECT_DIR$/WatchList.html" />
     <entry file="file://$PROJECT_DIR$/MinhasSeries.html" />
-    <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -4591,6 +4574,14 @@
           <folding>
             <element signature="e#3554#3561#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
