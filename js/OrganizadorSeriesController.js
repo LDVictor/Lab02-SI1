@@ -9,8 +9,8 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
             Rated: "TV-14",
             imdbRating: "7.6",
             imdbID: "tt1578873",
-            avaliacaoDoUsuario: 9,
-            ultimoEpisodio: "Episodio 10 da temporada 4"
+            avaliacaoUsuario: 8,
+            ultimoEpisodio: null
         }
     ];
 
@@ -22,38 +22,55 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
             Rated: "TV-MA",
             imdbRating: "8.6",
             imdbID: "tt2575988",
-            avaliacaoDoUsuario: 0,
-            ultimoEpisodio: "Episodio 10 da temporada 4"
+            avaliacaoUsuario: null,
+            ultimoEpisodio: null
         }
-
     ]
 
-    $scope.seriesSearch = [
-    ];
+    $scope.seriesSearch = [ ];
 
-    $scope.searched = false;
+    $scope.searchState= "";
 
     $scope.pesquisarSerie = function(nome){
         var promise = $http.get('http://www.omdbapi.com/?s=' + nome + '&type=series&apikey=93330d3c').then(function(response){
             $scope.seriesSearch = response.data.Search;
-            $scope.searched = true;
+            $scope.searchState = response.data.Error;
         }, function error(error){
+
             console.log(error);
         })
         return promise;
     };
 
-   $scope.adicionarSerie = function (serie) {
-        $scope.series.push(serie);
-        console.log($scope.series);
+    $scope.adicionarSerie = function(nomeserie){
+            var promise = $http.get('https://omdbapi.com/?i=' + nomeserie.imdbID + '&plot=full&apikey=93330d3c');
+            promise.then(function(response){
+                var fullSerie = response.data;
+                $scope.series.push(fullSerie);
+
+            }).catch(function(error){
+                console.log(error);
+            });
     };
 
-    $scope.adicionarSerieAoWatchlist = function (serie) {
-        $scope.watchlist.push(serie);
+    $scope.adicionarSerieAoWatchlist = function(nomeserie){
+        var promise = $http.get('https://omdbapi.com/?i=' + nomeserie.imdbID + '&plot=full&apikey=93330d3c');
+        promise.then(function(response){
+            var fullSerie = response.data;
+            $scope.watchlist.push(fullSerie);
+
+        }).catch(function(error){
+            console.log(error);
+        });
     };
 
     $scope.apagarSerie = function (serie) {
         $scope.series.pop(serie);
+    };
+
+    $scope.transferirSerie = function (serie) {
+            $scope.series.push(serie);
+            $scope.watchlist.pop(serie);
     };
 
     $scope.apagarSerieDoWatchlist = function (serie) {
@@ -62,7 +79,7 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
 
     $scope.avaliarSerie = function (serie, nota) {
         if (nota < 10 || nota > 0) {
-            serie.avaliacaoDoUsuario == nota;
+            serie.avaliacaoUsuario = nota;
         }
     };
 
@@ -70,9 +87,9 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
         serie.ultimoEpisodio = episodio;
     }
 
-    $scope.contemNaLista = function (id) {
-        series.forEach(function(series) {
-            if(serie.imdbID == id) {
+    $scope.contemNaLista = function (nomeserie) {
+        $scope.series.forEach(function(serie) {
+            if(serie.Title == nomeserie) {
                 return true;
             }
             return false;
@@ -80,8 +97,8 @@ angular.module("OrganizadorDeSeries").controller("OrganizadorSeriesController", 
     }
 
     $scope.searched = function(){
-        return $scope.searched;
-    };
+        return $scope.searchState === "Movie not found!";
 
+    };
 
 });
