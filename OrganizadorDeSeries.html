@@ -1,4 +1,5 @@
 <html ng-app="OrganizadorDeSeries">
+
 <head>
     <meta charset="UTF-8">
     <title>Organizador de Séries</title>
@@ -11,18 +12,23 @@
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
+
 <body background="icons/back.jpg" class="center-block container text-center" ng-controller="OrganizadorSeriesController">
+
 <nav class="navbar navbar-default navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">{{app}}</a>
-            <a class="navbar-btn btn btn" href="#" onclick="location.href = 'https://github.com/LDVictor/';">Meu repositório do GitHub.com</a>
+            <a class="navbar-btn btn btn" href="#" onclick="location.href = 'https://github.com/LDVictor/Lab02-SI1';">Meu repositório do GitHub.com</a>
         </div>
     </div>
 </nav>
+
 <input class="form-control" type="text" ng-model="nome" name="nome" placeholder="Digite o nome da serie que quer pesquisar: "/>
 <button class="btn btn-success btn-xs button" ng-click="pesquisarSerie(nome)" ng-disabled="nome.length == 0">Pesquisar Serie</button>
+
 <p> </p>
+
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -34,11 +40,12 @@
         <tr ng-repeat="serie in seriesSearch">
             <td>{{serie.Title}}</td>
             <td><img ng-src="{{serie.Poster !== 'N/A' ? serie.Poster:'http://mteliza.vic.cricket.com.au/files/819/images/imageNotAvailable.jpg'}}" height="300" width="200"></td>
-            <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="adicionarSerie(serie)">Adicionar ao Perfil</button></td>
-            <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="adicionarSerieAoWatchlist(serie)">Adicionar ao Watchlist</button></td>
+            <td><button type="submit"  class="btn-success" ng-click="adicionarSerie(serie)">Adicionar ao Perfil</button></td>
+            <td><button type="submit"  class="btn-info" ng-click="adicionarSerieAoWatchlist(serie)">Adicionar ao Watchlist</button></td>
         </tr>
     </table>
 </nav>
+
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -50,10 +57,10 @@
             <td> </td>
             <td>{{serie.Title}}</td>
             <td><img ng-src="{{serie.Poster !== 'N/A' ? serie.Poster:'http://mteliza.vic.cricket.com.au/files/819/images/imageNotAvailable.jpg'}}" height="300" width="200"></td>
-            <td><button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#myModal{{$index}}">Mais informações</button></td>
-            <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="apagarSerie(serie)">Remover do perfil</button></td>
+            <td><button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#informacoesDaSerie{{$index}}">Mais Informações</button></td>
+            <td><button type="submit"  class="btn-danger" ng-click="apagarSerie(serie)">Remover do Perfil</button></td>
             <td>
-                <div id="myModal{{$index}}" class="modal fade" role="dialog">
+                <div id="informacoesDaSerie{{$index}}" class="modal fade" role="dialog">
                     <div class="modal-dialog modal-lg">
                         <!-- Modal content-->
                         <div class="modal-content">
@@ -103,6 +110,7 @@
         </tr>
     </table>
 </nav>
+
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -115,14 +123,15 @@
                 <td> </td>
                 <td>{{serie.Title}}</td>
                 <td><img ng-src="{{serie.Poster !== 'N/A' ? serie.Poster:'http://mteliza.vic.cricket.com.au/files/819/images/imageNotAvailable.jpg'}}" height="300" width="200"></td>
-                <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="transferirSerie(serie)">Adicionar ao perfil</button></td>
-                <td><button type="submit"  class="btn btn-warning btn-xs button" ng-click="apagarSerieDoWatchlist(serie)">Remover da watchlist</button></td>
+                <td><button type="submit"  class="btn-success" ng-click="transferirSerie(serie)">Adicionar ao Perfil</button></td>
+                <td><button type="submit"  class="btn-danger" ng-click="apagarSerieDoWatchlist(serie)">Remover do Watchlist</button></td>
             </tr>
         </table>
     </div>
 </nav>
-<footer>
-    Copyright © 2017
+
+<footer class="progress">
+    Copyright © 2017. Programa criado por Victor Emanuel Farias da Costa Borges.
 </footer>
 </body>
 </html>

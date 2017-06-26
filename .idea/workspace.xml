@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="180eb76a-0c30-4bda-894a-887969027605" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/final.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap/bootstrap css tirado.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap/bootstrap tirado.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tirados do css.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tirados do html.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrganizadorDeSeries.html" afterPath="$PROJECT_DIR$/OrganizadorDeSeries.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/app.css" afterPath="$PROJECT_DIR$/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/OrganizadorSeriesController.js" afterPath="$PROJECT_DIR$/js/OrganizadorSeriesController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bootstrap/bootstrap.css" afterPath="$PROJECT_DIR$/lib/bootstrap/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/bootstrap/bootstrap.js" afterPath="$PROJECT_DIR$/lib/bootstrap/bootstrap.js" />
     </list>
     <ignored path="hello-world.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,43 +32,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="tema.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/tema.css">
+      <file leaf-file-name="OrganizadorSeriesController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="3449" column="21" lean-forward="true" selection-start-line="3449" selection-start-column="21" selection-end-line="3450" selection-end-column="20" />
+            <state relative-caret-position="1649">
+              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrganizadorDeSeries.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrganizadorDeSeries.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OrganizadorDeSeries.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+            <state relative-caret-position="419">
+              <caret line="60" column="50" lean-forward="false" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
               <folding>
-                <element signature="e#3574#3581#1" expanded="true" />
+                <element signature="e#3554#3561#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="168" column="17" lean-forward="true" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+            <state relative-caret-position="288">
+              <caret line="200" column="18" lean-forward="false" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrganizadorSeriesController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
+      <file leaf-file-name="tema.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/tema.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="99" column="50" lean-forward="false" selection-start-line="99" selection-start-column="50" selection-end-line="99" selection-end-column="50" />
+            <state relative-caret-position="288">
+              <caret line="4181" column="7" lean-forward="false" selection-start-line="4181" selection-start-column="1" selection-end-line="4181" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -74,8 +77,8 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="6027" column="10" lean-forward="false" selection-start-line="6027" selection-start-column="10" selection-end-line="6027" selection-end-column="10" />
+            <state relative-caret-position="288">
+              <caret line="6026" column="13" lean-forward="false" selection-start-line="6026" selection-start-column="7" selection-end-line="6026" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -91,14 +94,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.js">
+      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/jquery/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="5" column="2768" lean-forward="true" selection-start-line="5" selection-start-column="2768" selection-end-line="5" selection-end-column="2768" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-221">
+              <caret line="5" column="2768" lean-forward="false" selection-start-line="5" selection-start-column="2768" selection-end-line="5" selection-end-column="2768" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,6 +142,8 @@
       <find>btn btn-success btn-xs button</find>
       <find>btn-s</find>
       <find>btn-xs</find>
+      <find>footer</find>
+      <find>navbar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,10 +172,10 @@
         <option value="$PROJECT_DIR$/MinhasSeries.html" />
         <option value="$PROJECT_DIR$/lib/bootstrap/bootstrap.js" />
         <option value="$PROJECT_DIR$/lib/bootstrap/bootstrap.css" />
-        <option value="$PROJECT_DIR$/css/tema.css" />
         <option value="$PROJECT_DIR$/js/OrganizadorSeriesController.js" />
-        <option value="$PROJECT_DIR$/OrganizadorDeSeries.html" />
+        <option value="$PROJECT_DIR$/css/tema.css" />
         <option value="$PROJECT_DIR$/css/app.css" />
+        <option value="$PROJECT_DIR$/OrganizadorDeSeries.html" />
       </list>
     </option>
   </component>
@@ -195,6 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,22 +237,8 @@
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OrganizadorSeries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrganizadorSeries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
+              <option name="myItemId" value="jquery" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,8 +259,22 @@
               <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
+              <option name="myItemId" value="OrganizadorSeries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrganizadorSeries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -291,9 +308,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -709,12 +724,14 @@
       <workItem from="1498141450785" duration="2123000" />
       <workItem from="1498159244084" duration="10080000" />
       <workItem from="1498247896943" duration="1679000" />
-      <workItem from="1498496671564" duration="13182000" />
+      <workItem from="1498496671564" duration="13418000" />
+      <workItem from="1498512108586" duration="141000" />
+      <workItem from="1498514667254" duration="3232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49226000" />
+    <option name="totallyTimeSpent" value="52835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -769,19 +786,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OrganizadorDeSeries.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
-            <element signature="e#3574#3581#1" expanded="true" />
+            <element signature="e#3554#3561#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1674,13 +1684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1481274810000" expanded="true" signature="13837:14533" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="13856:14115" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="13926:14095" ph="..." />
-            <marker date="1481274810000" expanded="false" signature="14259:14271" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="14285:14516" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1712,7 +1715,7 @@
         <state relative-caret-position="612">
           <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
-            <element signature="e#3574#3581#1" expanded="true" />
+            <element signature="e#3554#3561#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2605,13 +2608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1481274810000" expanded="true" signature="13837:14533" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="13856:14115" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="13926:14095" ph="..." />
-            <marker date="1481274810000" expanded="false" signature="14259:14271" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="14285:14516" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2643,7 +2639,7 @@
         <state relative-caret-position="153">
           <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
-            <element signature="e#3574#3581#1" expanded="true" />
+            <element signature="e#3554#3561#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3528,13 +3524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1481274810000" expanded="true" signature="13837:14533" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="13856:14115" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="13926:14095" ph="..." />
-            <marker date="1481274810000" expanded="false" signature="14259:14271" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="14285:14516" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3638,13 +3627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1481274810000" expanded="true" signature="13837:14533" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="13856:14115" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="13926:14095" ph="..." />
-            <marker date="1481274810000" expanded="false" signature="14259:14271" ph="..." />
-            <marker date="1481274810000" expanded="true" signature="14285:14516" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3653,7 +3635,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="17">
             <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -3667,10 +3648,54 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/algumacoisa.css" />
+    <entry file="file://$PROJECT_DIR$/WatchList.html" />
+    <entry file="file://$PROJECT_DIR$/MinhasSeries.html" />
+    <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="6026" column="13" lean-forward="false" selection-start-line="6026" selection-start-column="7" selection-end-line="6026" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="5" column="2768" lean-forward="false" selection-start-line="5" selection-start-column="2768" selection-end-line="5" selection-end-column="2768" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/jquery/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438447">
-          <caret line="25791" column="23" lean-forward="false" selection-start-line="25791" selection-start-column="20" selection-end-line="25791" selection-end-column="23" />
+        <state relative-caret-position="459107">
+          <caret line="31246" column="36" lean-forward="false" selection-start-line="31246" selection-start-column="30" selection-end-line="31246" selection-end-column="36" />
           <folding>
             <marker date="1498072761709" expanded="true" signature="23034:23668" ph="..." />
             <marker date="1498072761709" expanded="true" signature="23080:23567" ph="..." />
@@ -4543,79 +4568,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WatchList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="41" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MinhasSeries.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="88" column="8" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="88" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="6027" column="10" lean-forward="false" selection-start-line="6027" selection-start-column="10" selection-end-line="6027" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/bootstrap/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="5" column="2768" lean-forward="true" selection-start-line="5" selection-start-column="2768" selection-end-line="5" selection-end-column="2768" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/tema.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="3449" column="21" lean-forward="true" selection-start-line="3449" selection-start-column="21" selection-end-line="3450" selection-end-column="20" />
+        <state relative-caret-position="288">
+          <caret line="4181" column="7" lean-forward="false" selection-start-line="4181" selection-start-column="1" selection-end-line="4181" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/OrganizadorSeriesController.js">
+    <entry file="file://$PROJECT_DIR$/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="99" column="50" lean-forward="false" selection-start-line="99" selection-start-column="50" selection-end-line="99" selection-end-column="50" />
+        <state relative-caret-position="288">
+          <caret line="200" column="18" lean-forward="false" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OrganizadorDeSeries.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+        <state relative-caret-position="419">
+          <caret line="60" column="50" lean-forward="false" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
           <folding>
-            <element signature="e#3574#3581#1" expanded="true" />
+            <element signature="e#3554#3561#1" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="168" column="17" lean-forward="true" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
